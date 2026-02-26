@@ -292,3 +292,26 @@ Change website Animals website in Japanese and English to just using one languag
     └── cat
         └── cat.md
 ```        
+
+The navigation links would change to be like this...
+```
+NAVIGATION_LINKS = {
+    DEFAULT_LANG: (
+        ('/index.html', '🏠'),
+        (        
+            (
+                ('/dog/puppy/', '子犬'),
+                ('/dog/black-dog/', 'ブラックドッグ'),
+                ('/dog/white-dog/', 'ホワイトドッグ'),
+                ('/dog/spots-dog/', 'スポッティ・ドッグ'),
+            ),
+            '犬'
+        ),
+        ("/cat/cat/", "猫"),
+        ("/bird/bird/", "鳥"),
+        ("/mouse/mouse/", "ねずみ"),
+        ("/download/", "ダウンロード"),
+        ("/about/", "詳細"),
+    ),    
+}
+```
