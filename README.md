@@ -3,11 +3,13 @@ Notes on Nikola websites on Github
 
 ## Nikola
 
-[Nikola](https://getnikola.com/) is an application written in the Python programing language that is used to build static websites. In normal use Nikola is downloaded to your PC. Webpages for a website are written in Markdown text. When Nikola is run it converts the Markdown to html and builds a website. This can be tested with Nikola's webserver feature, or deployed to a website hosting provider. This website creation process is somwhat complex, so it can be perfomed more simply by using Github.
+[Nikola](https://getnikola.com/) is an application written in the Python programing language that builds static websites. 
 
-On Github Nikola also have an account and their website creation application is available to users who have accounts on Github. Upon *Commit*ting to changes you have made to a web-page in the **Srv** branch, the Nikola application is automatically run as a *workflow*. Nikola will build the website in the **Main** branch. This Main branch then becomes the website on Github.
+In normal use *Nikola* is downloaded to your PC. Webpages for a website are written in *Markdown* text. When *Nikola* is run it converts the *Markdown* to html and builds a website. The new website may be tested with *Nikola's* webserver feature, or deployed to a website hosting provider. This website creation process is somewhat complex, so it can be perfomed more simply by using *Github*.
 
-For example the Github user **kanako-web** logs into their Github account and creates the repository **kanako-web.github.io**. They set up this repository to have both *Main* and *Src* branches. The website pages are created and placed in the *Src* branch. The workflow tool uses the Nikola application to build the website. From a browser you connect to **https://kanako-wen.github.io** to view the website.
+*Nikola* have and account on *Github* and their website creation application is available to users who have accounts on *Github*. Upon *Commit*ting to changes you have made to a webpage in the **srv** branch, the Nikola application is automatically run as a *workflow*. Nikola will build the website in the **main** branch. This main branch then becomes the website on Github.
+
+For example the Github user **kanako-web** logs into their Github account and creates the repository **kanako-web.github.io**. They set up this repository to have both *main* and *src* branches. The website pages are created and placed in the *src* branch. The workflow tool uses the *Nikola* application to build the website. From a browser you connect to **https://kanako-wen.github.io** to view the website.
 
 ## Markdown
 
@@ -21,7 +23,7 @@ Using Markdown it is simplier to enhance a document. For example the above would
 ```
 This is **bold** text.
 ```
-In summary all web-pages are initially markdown files with a .md suffix to the file name. The Nikola application converts the Markdown file to an html web-page.
+In summary all web-pages are initially markdown files with a **.md** suffix to the file name. The Nikola application converts each Markdown file to an html web-page.
 
 ## Src branch of Github Repository
 
