@@ -185,3 +185,110 @@ TRANSLATIONS = {
 }
 ```
 
+## Change Website
+
+Change website from information on Hamilton and Waikato University to an Animals website, but keep support for two languages. Example of the src branch tree for Animals website
+```
+├── .github 
+│   └── workflows
+│       └── main.yml
+│
+├── conf.py
+│
+├── files
+│   ├── assets
+│   │   └── css
+│   │       └── custom.css
+│   │
+│   ├── index.html <-- Edit the html to show website is about Animals.
+│   │
+│   └── pdf
+│       ├── test-en.pdf
+│       └── test-ja.pdf
+│
+├── images
+│   ├── favicon-cat.svg
+│   ├── logo.svg
+│   │                     <-- Changes are to the files and directories below
+│   └── cat             
+│       ├── cat.webp
+│       └── kitten.jpeg
+│
+└── pages
+    ├── about.en.md
+    ├── about.ja.md
+    ├── download.en.md
+    ├── download.ja.md
+    ├── index.en.md
+    ├── index.ja.md
+    │
+    ├── bird
+    │   ├── bird.en.md
+    │   └── bird.ja.md
+    │
+    ├── dog
+    │   ├── puppy.en.md
+    │   ├── puppy.ja.md
+    │   ├── black-dog.en.md
+    │   ├── black-dog.ja.md
+    │   ├── white-dog.en.md
+    │   ├── white-dog.md
+    │   ├── spots-dog.en.md
+    │   └── spots-dog.ja.md
+    │
+    ├── mouse
+    │   ├── mouse.en.md
+    │   └── mouse.ja.md
+    │
+    └── cat
+        ├── cat.en.md
+        └── cat.ja.md
+```
+
+Change website Animals website in Japanese and English to just using one language. Example of the src branch tree
+```
+├── .github 
+│   └── workflows
+│       └── main.yml
+│
+├── conf.py
+│
+├── files
+│   ├── assets
+│   │   └── css
+│   │       └── custom.css
+│   │
+│   ├── index.html  <-- This file can be removed as there is no need to select languages.
+│   │
+│   └── pdf
+│       ├── test-en.pdf
+│       └── test-ja.pdf
+│
+├── images
+│   ├── favicon-cat.svg
+│   ├── logo.svg
+│   │                     <-- Changes are the files and directories below
+│   └── cat             
+│       ├── cat.webp
+│       └── kitten.jpeg
+│
+└── pages
+    ├── about.md
+    ├── download.md
+    ├── index.md
+    │
+    ├── bird
+    │   └── bird.md
+    │
+    ├── dog
+    │   ├── puppy.md
+    │   ├── black-dog.md
+    │   ├── white-dog.md
+    │   └── spots-dog.md
+    │
+    ├── mouse
+    │   └── mouse.md
+    │
+    └── cat
+        └── cat.md
+```        
