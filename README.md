@@ -3,7 +3,7 @@ Notes on Nikola websites on Github
 
 ## Nikola
 
-[Nikola](https://getnikola.com/) is an application written in Python that is used to build static websites. In normal use Nikola is downloaded to your PC. Webpages for a website are written in Markdown text. When Nikola is run it converts the Markdown to html and builds a website. This can be tested with Nikola's webserver feature, or deployed to a website hosting provider. This website creation process is somwhat complex, so it can be perfomed more simply by using Github.
+[Nikola](https://getnikola.com/) is an application written in the Python programing language that is used to build static websites. In normal use Nikola is downloaded to your PC. Webpages for a website are written in Markdown text. When Nikola is run it converts the Markdown to html and builds a website. This can be tested with Nikola's webserver feature, or deployed to a website hosting provider. This website creation process is somwhat complex, so it can be perfomed more simply by using Github.
 
 On Github Nikola also have an account and their website creation application is available to users who have accounts on Github. Upon *Commit*ting to changes you have made to a web-page in the **Srv** branch, the Nikola application is automatically run as a *workflow*. Nikola will build the website in the **Main** branch. This Main branch then becomes the website on Github.
 
