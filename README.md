@@ -29,7 +29,15 @@ In summary all web-pages are initially markdown files with a **.md** suffix to t
 
 ## Src branch of Github Repository
 
-In the **src** branch, the following tree structure shows the directories and files that are used by the Nikola application to build the website
+The Kanako-Animals website is a simple template to create a website in Japanese on animals. The Nikola source files are located at: 
+
+https://github.com/kanako-online/kanako-online.github.io/blob/src/README.md
+
+The Kanako Animal website can be accessed at:
+
+https://kanako-online.github.io/index.html
+
+The **src** branch of the Kanako Animals website, has the following tree structure. This shows the directories and files that are used by the Nikola application to build the website...
 
 ```
 src <-- Source files used by the Nikola application to build the web-site in Main 
