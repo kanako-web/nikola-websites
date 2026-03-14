@@ -35,7 +35,7 @@ https://github.com/kanako-online/kanako-online.github.io/blob/src/README.md
 
 The Kanako Animal website can be accessed at:
 
-https://kanako-online.github.io/index.html
+https://kanako-online.github.io
 
 The **src** branch of the Kanako Animals website, has the following tree structure. This shows the directories and files that are used by the Nikola application to build the website...
 
