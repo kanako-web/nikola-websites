@@ -7,9 +7,11 @@ Notes on Nikola websites on Github
 
 In normal use *Nikola* is downloaded to your PC. Webpages for a website are written in *Markdown* text. When *Nikola* is run it converts the *Markdown* to html and builds a website. The new website may be tested with *Nikola's* webserver feature, or deployed to a website hosting provider. This website creation process is somewhat complex, so it can be perfomed more simply by using *Github*.
 
-*Nikola* have and account on *Github* and their website creation application is available to users who have accounts on *Github*. Upon *Commit*ting to changes you have made to a webpage in the **srv** branch, the Nikola application is automatically run as a *workflow*. Nikola will build the website in the **main** branch. This main branch then becomes the website on Github.
+*Nikola* have an account on *Github* and their website creation application is available to users who have accounts on *Github*. Upon *Commit*ting to changes you have made to a webpage in the **srv** branch, the Nikola application is automatically run as a *workflow*. Nikola will build the website in the **main** branch. This main branch then becomes the website on Github.
 
-For example the Github user **kanako-web** logs into their Github account and creates the repository **kanako-web.github.io**. They set up this repository to have both *main* and *src* branches. The website pages are created and placed in the *src* branch. The workflow tool uses the *Nikola* application to build the website. From a browser you connect to **https://kanako-wen.github.io** to view the website.
+For example the Github user **kanako-web** logs into their Github account and creates the repository **kanako-web.github.io**. They set up this repository to have both *main* and *src* branches. The website pages are created and placed in the *src* branch. The workflow tool uses the *Nikola* application to build the website. From a browser you connect to **https://kanako-web.github.io** to view the website.
+
+Additionally the Github user **kanako-web** has an *Organization* this is **kanako-online**. Another Nikola website can be created from the kanako-online organization. From a browser you connect to **https://kanako-online.github.io** to view the website.
 
 ## Markdown
 
@@ -28,6 +30,64 @@ In summary all web-pages are initially markdown files with a **.md** suffix to t
 ## Src branch of Github Repository
 
 In the **src** branch, the following tree structure shows the directories and files that are used by the Nikola application to build the website
+
+```
+src <-- Source files used by the Nikola application to build the web-site in Main 
+│
+├── pages                          <-- Top Directory for the Markdown files that become web-pages.
+│   ├── bird                       <-- Sub Directory for the Markdown file on birds.
+│   │   └── bird.md                <-- Markdown file on birds that is used to create the webpage.
+│   ├── cat                        <-- Sub Directory for the Markdown file on cats.
+│   │   └── cat.md                 <-- Markdown file on cats that is used to create the webpage.
+│   ├── dog                        <-- Sub Directory for the Markdown file on dogs.
+│   │   ├── dog-black.md           <-- Markdown file on black dogs that is used to create the webpage.
+│   │   ├── dog-introduction.md    <-- Markdown file to introduce the 4 x dogs. It is used to create the webpage.
+│   │   ├── dog-puppy.md           <-- Markdown file on puppies that is used to create the webpage.
+│   │   ├── dog-spot.md            <-- Markdown file on spotted dogs that is used to create the webpage.
+│   │   └── dog-white.md           <-- Markdown file on white dogs that is used to create the webpage.
+│   ├── mouse                      <-- Sub Directory for the Markdown file on the mouse.
+│   │   └── mouse.md               <-- Markdown file on the mouse that is used to create the webpage.
+│   │
+│   ├── about.md                   <-- Markdown file about the website that is used to create the webpage.
+│   ├── download.md                <-- Markdown file on downloading that is used to create the webpage.
+│   └── index.md                   <-- Markdown file which is the Home page. Used to create the Home webpage.
+│
+│
+├── images                         <-- Top Directory for all the images on the web-site.
+│   ├── bird                       <-- Sub Directory for the images on birds
+│   │   └── bird-fantail.jpg       <-- Image file of the bird.
+│   ├── cat                        <-- Sub Directory for the images on cats
+│   │   ├── cat.jpg                <-- Image file of the cat.
+│   │   └── kitten.jpg             <-- Image file of the kittens.
+│   ├── dog                        <-- Sub Directory for the images on dogs.
+│   │   ├── dog-black.jpg          <-- Image file of the black dog.
+│   │   ├── dog-puppy.jpg          <-- Image file of the puppy dog.
+│   │   ├── dog-spot.jpg           <-- Image file of the spotted dog.
+│   │   └── dog-white.jpg          <-- Image file of the white dog.
+│   ├── mouse                      <-- Sub Directory for the images of the mouse.
+│   │   └── mouse.jpg              <-- Image file of the mouse.
+│   │
+│   ├── favicon-cat.svg            <-- Image of cats face that is placed in the browsers tab.
+│   └── logo.svg                   <-- Image of a cat that is the logo in each web-page header section.
+│
+│
+├── files                          <-- Top Directory for additional files used.
+│   ├── assets                     <-- Sub Directory.
+│   │   └── css                    <-- Sub Sub Directory.
+│   │       └── custom.css         <-- Cascading Style Sheets file that sets the colours, etc. for the website.
+│   └── pdf
+│       └── test-ja.pdf            <-- A Japanese pdf file to test that the download feature is working.
+│
+├── conf.py                        <-- Python programming language file used to configure the website.
+│
+└── .github                        <-- Directory
+    └── workflows                  <-- Sub Directory
+        └── main.yml               <-- Yaml command file that runs Nikola and rebuilds the website after every change is committed.
+
+
+
+```
+
 
 ```
 src branch tree.
