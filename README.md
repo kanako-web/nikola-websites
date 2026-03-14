@@ -29,11 +29,11 @@ In summary all web-pages are initially markdown files with a **.md** suffix to t
 
 ## Src branch of Github Repository
 
-The Kanako-Animals website is a simple template to create a website in Japanese on animals. The Nikola source files are located at: 
+The Kanako-Animals website is a simple website that demonstrates how the Nikola builds the website from Markdown files written in Japanese. The Nikola source files for this website are located at: 
 
 https://github.com/kanako-online/kanako-online.github.io/blob/src/README.md
 
-The Kanako Animal website can be accessed at:
+The Kanako-Animals website can be viewed at:
 
 https://kanako-online.github.io
 
